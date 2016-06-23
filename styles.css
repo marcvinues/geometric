@@ -1,0 +1,84 @@
+.main_container {
+    width: auto;
+    height: auto;
+    background: green;
+    position: absolute;
+}
+.line {
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+    height: 30px;
+    clear: both;
+    flex-flow: column;
+}
+.box-container{
+    background: none;
+
+    overflow: hidden;
+    float: left;
+}
+
+.line > :first-child{
+  padding-left:25px;
+}
+.line:last-child .box-container{
+  padding-right: 20px;
+}
+.circle {
+  border: 1px solid black;
+  float:left;
+  background: red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  opacity: 0;
+  animation: cell 2s forwards;
+  margin:5px;
+  overflow: hidden;
+}
+.cont
+{
+  width: 300px;
+  height:auto;
+}
+.cell{
+  border: 1px solid black;
+  float:left;
+  background: red;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  opacity: 0;
+  animation: cell 2s forwards;
+  margin:5px;
+}
+@-webkit-keyframes cell{
+  from{opacity: 0}
+  to{opacity: 1}
+}
+.active
+{
+  background-color: orange;
+}
+header{
+  background-color:#FBB3B1;
+  width: 100%;
+  height: 80px;
+  margin:0;
+  padding: 0;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+  font:arial;
+  font-size: 20pt;
+  margin:0;
+
+}
+.shapes{
+  text-align: center;
+  font-weight: bold;
+}
